@@ -1,5 +1,4 @@
 
-#define _CRT_SECUIRE_NO_WARNINGS
 #include <stdio.h>
 #include "contact.h"
 
@@ -41,4 +40,3 @@ void testContact()
 
 	printContact(c1);
 }
-//a
