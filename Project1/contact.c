@@ -30,3 +30,29 @@ void printContact(Contact ct)
 	printf("성별 : %s\n", ct.gender == MAN ? "남자" : "여자");
 	printf("연도 : %4d\n", ct.year);
 }
+
+//====================================================================================================
+
+
+int isEqualContactptr(const Contact *a, const Contact *b)
+{
+	if (a->year == b->year &&
+		a->gender == b->gender &&
+		strcmp(a->name, b->name) == 0 &&
+		strcmp(a->phone, b->phone) == 0)
+	{
+		return 1;
+	}
+
+
+	return 0;
+}
+
+
+void printContactptr(const Contact *ct)
+{
+	printf("이름 : %s\n", ct->name);
+	printf("전화번호 : %s\n", ct->phone);
+	printf("성별 : %s\n", ct->gender == MAN ? "남자" : "여자");
+	printf("연도 : %4d\n", ct->year);
+}

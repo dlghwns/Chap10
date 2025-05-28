@@ -21,6 +21,8 @@ int isEqualContact(Contact a, Contact b);
 
 void printContact(Contact ct);
 
+int isEqualContactptr(Contact* a, Contact* b);
 
+void printContactptr(Contact* ct);
 
 #endif
